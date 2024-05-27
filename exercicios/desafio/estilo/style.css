@@ -1,208 +1,251 @@
 @charset "UTF-8";
- 
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 
-@font-face {
-    font-family: 'Android';
-    src: url('../fontes/idroid.otf') format('opentype');
-}
-
-
-
-:root {
-    --cor0: #c4ebd6;
-    --cor1: #83e1ad;
-    --cor2: #3ddc84;
-    --cor3: #2fa866;
-    --cor4: #1a5c37;
-    --cor5: #063d1e;
-
-    --fonte-padrao: arial, verdana, helvetica, sans-serif;
-    --fonte-destaque:'Bebas Neue', cursive;
-    --fonte-android:'Android', cursive;
-}
-
-* {
+body{
+    background-color: #84E1AD;
     margin: 0px;
-    padding: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+
 }
 
-body {
-    background-color: #c4ebd6;
-    font-family: var(--fonte-padrao);
-}
-
-a.externo::after{
-    content: '\00A0\1F517';
+h1 {
+    margin: 0px;
 }
 
 header {
-    background-image: linear-gradient(to bottom, var(--cor3), var(--cor5));
-    min-height: 150px;
+    background-image: linear-gradient(to top, #1A5C38, #3DDA84);
+    width: 100%;
+    height: 220px;
     text-align: center;
-    padding-top: 40px;
-}
-
-header> h1 {
-     color: white;
-     font-family: var(--fonte-destaque);
-     margin-bottom: 20px;
-     text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.315);
-}
-
-header > p {
     color: white;
-    font-family: var(--fonte-padrao);
-    font-size: 1.1em; 
-    max-width: 500px;
-    margin: auto;
-    padding-right: 10px;
-    padding-left: 10px;
-    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.267);
-    margin-bottom: 20px;
+    box-shadow: 0px 0px 5px 5px rgba(0, 0, 0, 0.397);
 }
+
+    header > h1 {
+        padding: 30px 10px 10px 10px;
+        font-family: 'Bebas Neue';
+        font-size: 2.8em;
+        letter-spacing: -1px;
+        text-shadow: 1px 1px 2px black ;
+    }
+
+    header > p {
+        text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.753);
+        line-height: 1.5em;
+    }
 
 nav {
-    background-color: var(--cor5);
-    padding: 10px;
-    box-shadow: 0px 7px 7px rgba(0, 0, 0, 0.425);
+    text-align: left;
+    padding: 20px 10px 10px 15px;
 }
 
-nav > a {
-    color: var(--cor1);
-    padding: 10px;
-    border-radius: 5px;
-    text-decoration: none;
-    font-weight: bold;
-    transition-duration: 0.5s;
-}
+    nav > a {
+        margin-right: 20px;
+        text-decoration: none;
+        color: white;
+        font-weight: bold;
+    }
 
-nav > a:hover {
-    background-color: var(--cor3);
-    color: var(--cor5);
-}
-
-main{
+main {
     background-color: white;
-    min-width: 300px;
-    max-width: 1000px;
-    margin-bottom: 30px;
+    width: 75%;
     margin: auto;
-    padding: 20px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.438);
-    border-bottom-left-radius: 10px;
-    border-bottom-right-radius: 10px;
-}
-
-main h1 {
- color: #063d1e;
- font-family: var(--fonte-android);
- font-weight: normal;
- font-size: 1.8em;
-}
-
-main h2 {
-    font-family: var(--fonte-android);
-    color: var(--cor4);
-    font-size: 1.3em;
-    background-image: linear-gradient(to padding-righ,
-    --cor1, transparent);
-    text-indent: 8px;
-}
-
-main p {
-    margin: 15px 0px 15px 0px;
-    text-align: justify;
-    text-indent: 30px;
-    font-size: 1em;
-    line-height: 2em;
-}
-
-main strong {
-    color: var(--cor4);
-    font-weight: bold;
-    padding: 2px 6px;
+    padding: 30px 20px 15px 20px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.74);
 
 }
 
-mai a {
-    text-decoration: none;
-    font-weight: bold;
-    color: var(--cor5);
-    background-color: var(--cor1);
-    padding: 2px 6px;
+#final {
+    background-color: white;
+    width: 75%;
+    margin: auto;
+    padding: 20px 20px 30px 20px;
+    border-radius: 0px 0px 10px 10px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.74);
+    
+}
+
+    #final > p {
+        text-align: justify;
+        text-indent: 30px;
+        line-height: 1.5em;
+        margin: 0px;
+        padding: 20px 0px 0px 0px;
+
+    }
+
+    main > h1 {
+        font-family: 'idroid';
+        color: #185A36;
+        padding: 0px;
+        margin: 0px;
+
+    }
+
+    main > h2 {
+        background-image: linear-gradient(to right, #84e1ac6b, white);
+        font-family: 'idroid';
+        color: #185A36;
+        text-indent: 10px;
+        padding: 0px;
+        margin: 0px;
+
+    }
+
+    main > p {
+        text-align: justify;
+        text-indent: 30px;
+        line-height: 1.5em;
+        margin: 0px;  
+        padding: 20px 0px 20px 0px;  
+
+    }
+
+    main > p > em {
+        color: #185A36;
+        font-style: normal;
+        font-weight: bold;
+    }
+
+article {
+    line-height: 1.5em;
+    margin: 0px
 
 }
 
-main a:hover{
-     text-decoration: underline;
-     color: var(--cor4);
-}
+    article > p {
+        padding: 0px 0px 0px 0px;
 
-main img {
-    width: 100%;
-}
+    }
 
-main img.pequena {
-    max-width: 350px;
+
+    article > h3 {
+        margin: 0px;
+        padding: 0px;
+    }
+
+.center {
     display: block;
-    margin: auto;
+    margin-left: auto;
+    margin-right: auto;
+
 }
 
-div.video {
-    background-color: var(--cor5);
-    margin: 0px -20px 30px -20px;
-    padding: 20px;
-    padding-bottom: 58%;
+.video-container {
     position: relative;
+    overflow: hidden;
+    width: 100%;
+    padding-top: 56.22%;;
 }
 
-div.video > iframe {
+.video-container iframe {
     position: absolute;
-    top: 5%;
-    left: 5%;
-    width: 90%;
-    height: 90%;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
 }
 
-aside {
-    background-color: var(--cor1);
-    padding: 10px;
-    border-radius: 10px;
+#video {
+    background-color: #185A36;
+    width: 75%;
+    margin: auto;
+    padding: 20px 20px 20px 20px;
+    border-radius: 0px;
+    box-shadow: none;
 }
 
-aside > h3 {
-    background-color: var(--cor4);
+#extra {
+    background-color: #2FA866;
     color: white;
-    padding: 10px;
-    margin: -10px -10px 0px -10px;
+    padding: 5px;
     border-radius: 10px 10px 0px 0px;
-    box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.274);
-}
-
-aside > ul {
-    list-style-type: '\2714\00A0\00A0';
-    list-style-position: inside;
-    columns: 2;
-    text-decoration: none;
 
 }
+
+    #extra > h3 {
+        margin: 0px;
+
+    }
+
+#versoes {
+    background-color: #C5EBD6;
+    padding: 10px;
+    text-indent: 30px;
+    border-radius: 0px 0px 10px 10px;
+}
+
+    #versoes > p {
+        margin: 0px;
+    }
+
+    .coluna {
+        float: left;
+        width: 50%;
+    }
+    
+    .fileira:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+
+    .coluna > ul{ 
+        list-style: none;
+        padding: 15px;
+        margin: 0px;
+
+    }
+
+    .coluna > ul li:before {
+        content: '✔';
+        padding: 0px 10px 0px 0px;
+    }
+
+    .coluna > ul li > a:visited {
+        color: black;
+        text-decoration: underline;
+    }
+
+    .coluna > ul li > a {
+        color: black;
+        text-decoration: underline;
+    }
+
+    .chain {
+        color: #1A5C38;
+        text-decoration: none;
+        font-weight: bold;
+    }
+
+    a.chain {
+        background-image: url(link.svg);
+        background-repeat: no-repeat;
+        background-position: top right;
+        padding-right: 1.5em;
+        background-size: 1em;
+    }
 
 footer {
-    background-color: #063d1e;
-    color: white;
+    background-color: #1A5C38;
+    border-right-width: 0px;
+    height: 10px;
+    padding: 10px 0px 15px 0px;
+    margin: 20px 0px 0px 0px;
     text-align: center;
-    font-size: 0.8em;
-    padding: 5px;
-}
-
-footer > a {
     color: white;
-    font-weight: bolder;
-    text-decoration: none;
+    
 }
 
-footer a:hover {
-    text-decoration: underline;
-    color: var(--cor1);
-}
+    footer > p {
+        padding: 0px;
+        margin: 0px;
+        height: 10px;
+        font-style: italic;
+
+    }
+
+    footer > p > em {
+        font-weight: bold;
+    }
